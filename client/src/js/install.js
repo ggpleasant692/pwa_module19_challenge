@@ -3,14 +3,14 @@ const butInstall = document.getElementById('buttonInstall');
 // Logic for installing the PWA
 // TODO: Add an event handler to the `beforeinstallprompt` event
 window.addEventListener('beforeinstallprompt', (event) => {
-    event.preventDefault(); // Prevent the default mini-info bar
-    butInstall.style.display = 'block'; // Show the install button
+    event.preventDefault(); 
+    butInstall.style.display = 'display';
 
 
 // TODO: Implement a click event handler on the `butInstall` element
 butInstall.onclick = () => {
-    event.prompt(); // Show the install prompt
-    butInstall.style.display = 'none'; // Hide the install button
+    event.prompt(); 
+    butInstall.style.display = 'none'; 
 };
 })
 
